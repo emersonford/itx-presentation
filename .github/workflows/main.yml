@@ -10,14 +10,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: checkout repo
+      - name: Checkout repo
         uses: actions/checkout@v2
 
-      - name: install dependencies
-        run: apt-get install -y chktex
+      - name: Install dependencies
+        run: sudo apt-get install -y chktex
 
-      - name: lint presentation.tex
+      - name: Lint presentation.tex
         run: make test
 
-      - name: build presentation.tex
+      - name: Build presentation.tex
         run: make all
