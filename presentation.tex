@@ -45,6 +45,7 @@
         \item saves you time and headaches
         \item ensure consistent workflow runs
         \item improve visiblity, handoff, and usability
+        \item provides possible revert / rollback functionality
         \item it scales
     \end{itemize}
 \end{frame}
@@ -98,6 +99,44 @@
         \only<3>{\includegraphics[width=\textwidth]{actions-getting-started3.png}}
     \end{minipage}
 \end{frame}
+
+\begin{frame}{Other Examples}
+    \begin{itemize}
+        \item deploy and configure infrastructure in the cloud
+        \item build, security test, and publish container images
+        \item do something when you comment on an issue
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Best Practices}
+    \begin{itemize}
+        \item don't run actions on arbitrary pull requests
+        \item pick a model for how to use Git and stick with it (rebase only, git-flow, etc)
+        \item don't let developers shoot themselves in the foot
+    \end{itemize}
+\end{frame}
+
+\section{Questions?}
+
+\begin{frame}{Related Topics}
+    \begin{itemize}
+        \item Declarative Infrastructure Management
+            \begin{itemize}
+                \item Terraform for Cloud Deployment
+                \item Ansible for Node Configuration
+            \end{itemize}
+        \item GitOps
+        \item Applying CI/CD to containers and Kubernetes
+        \item Secrets management in Git repos
+        \item Best practices / understanding Git
+        \item Alternative CI/CD solutions such as Gitlab Runners, Jenkins, CircleCI, etc.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Link}
+    \url{https://github.com/emersonford/itx-presentation}
+\end{frame}
+
 
 
 \end{document}
