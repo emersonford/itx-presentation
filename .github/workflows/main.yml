@@ -21,3 +21,9 @@ jobs:
 
       - name: Build presentation.tex
         run: make all
+
+      - name: Publish presentation
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "presentation.pdf"
+          token: ${{ secrets.GITHUB_TOKEN }}
