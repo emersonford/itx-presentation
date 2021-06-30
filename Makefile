@@ -2,7 +2,10 @@ IMAGES =
 
 all: presentation.pdf
 
-presentation.pdf: $(IMAGES)
+test:
+	chktex presentation.tex
+
+presentation.pdf: $(IMAGES) presentation.tex
 	pdflatex presentation.tex
 
 %.pdf: %.tex
