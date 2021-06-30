@@ -27,4 +27,6 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           artifacts: "presentation.pdf"
+          commit: ${{ github.event.after }}
+          tag: "release-${{ github.run_number }}"
           token: ${{ secrets.GITHUB_TOKEN }}
